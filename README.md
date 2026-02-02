@@ -53,7 +53,7 @@
 ---
 
 ## 🤝 Credits
-- Script logic & core ideas: **Author**  
+- Script logic & core ideas: **Sdurzawaa**  
 - AI Assistant: **Claude AI** (assisted with ideas, debugging, and logic optimization)  
 - Community references: Roblox documentation & developer forums  
 
