@@ -8,7 +8,7 @@
 ## ✨ Features
 - **ESP (Extra Sensory Perception)**
   - Display player/NPC positions
-  - Highlight models / boxes / names
+  - Highlight models / boxes / names / healthbar
   - Distance indicator
 - **Aim Assist**
   - Auto-lock to the nearest target within a FOV circle
