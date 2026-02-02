@@ -37,7 +37,7 @@ local Mouse = LocalPlayer:GetMouse()
 -- ============================================================
 local Config = {
     -- System Settings
-    Version = "5.0",
+    Version = "2.3",
     Name = "Combat Assist Pro",
     
     -- Camera Settings
@@ -70,14 +70,14 @@ local Config = {
     ESPBoxEnabled = true,
     ESPNameEnabled = true,
     ESPHighlightEnabled = true,
-    ESPHealthBar = true,
-    ESPDistance = true,
+    ESPHealthBar = false,
+    ESPDistance = false,
     ESPTracers = false,
     
     -- ESP Colors
     FriendColor = Color3.fromRGB(0, 255, 0),
     EnemyColor = Color3.fromRGB(255, 0, 0),
-    UseTeamColor = true,
+    UseTeamColor = false,
     ESPTransparency = 0.5,
     BoxTransparency = 0.7,
     
@@ -872,7 +872,7 @@ function TargetSystem.GetClosestTarget()
     return closestTarget
 end
 
-function TargetSystem.AimAtTarget(target)
+function TargetSystem.AtTarget(target)
     if not target or not target.Part then return end
     
     local targetPosition = target.Part.Position
@@ -1225,7 +1225,7 @@ function GUI.CreateCombatContent(parent)
     local buttonText = Instance.new("TextLabel")
     buttonText.Size = UDim2.new(0, 300, 0, 20)
     buttonText.BackgroundTransparency = 1
-    buttonText.Text = Config.Active and "DEACTIVATE AIM ASSIST" or "ACTIVATE AIM ASSIST"
+    buttonText.Text = Config.Active and "DEACTIVATE  ASSIST" or "ACTIVATE  ASSIST"
     buttonText.Font = Enum.Font.GothamBold
     buttonText.TextSize = 15
     buttonText.TextColor3 = Config.Theme.Text
